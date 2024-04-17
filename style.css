@@ -255,7 +255,15 @@ section {
     background-color: var(--main-color);
 } 
 
-
+@media screen and (max-width: 1170px) {
+    .header section {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+    .navbar a {
+        font-size: 1.4rem;
+    }
+}
 
 @media screen and (max-width: 1024px) {
     .navbar a {
@@ -273,6 +281,9 @@ section {
     }
 }
 
+
+
+
 @media screen and (max-width: 600px) {
     .navbar {
         flex-direction: column;
@@ -289,5 +300,22 @@ section {
 
     .box-container {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+}
+
+
+.home-container {
+    background-size: contain;
+}
+.about .container-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+@media screen and (max-width: 375px) {
+    .navbar a {
+        font-size: 1.2rem;
     }
 }
